@@ -3,7 +3,7 @@
 set -e
 
 rm -rf ./node_modules ./lib ./dist
-yarn
+
 
 git checkout .
 
@@ -19,7 +19,7 @@ git push
 
 git push --tags
 
-yarn run build
+npm run build
 
 npm publish
 
